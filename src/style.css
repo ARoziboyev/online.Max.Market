@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes:
+    light --default,
+    dark --prefersdark,
+    synthwave;
+}
+
+@layer components {
+  html,
+  body {
+    @apply h-full;
+  }
+
+  body {
+    @apply flex flex-col;
+  }
+
+  main {
+    @apply grow;
+  }
+
+  .main-container {
+    @apply mx-auto max-w-6xl px-5;
+  }
+}
