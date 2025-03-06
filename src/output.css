@@ -1081,6 +1081,26 @@
       border-bottom: var(--border) solid color-mix(in oklch, var(--color-base-content) 5%, #0000);
     }
   }
+  .diff-resizer {
+    position: relative;
+    top: calc(1/2 * 100%);
+    z-index: 1;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    height: calc(0.25rem * 2);
+    width: 50cqi;
+    max-width: calc(100cqi - 1rem);
+    min-width: 1rem;
+    resize: horizontal;
+    overflow: hidden;
+    opacity: 0%;
+    transform: scaleY(3);
+    cursor: ew-resize;
+    transform-origin: 100% 100%;
+    translate: 0.35rem 0.35rem;
+    clip-path: inset(calc(100% - 0.75rem) 0 0 calc(100% - 0.75rem));
+    transition: min-width 0.3s ease-out, max-width 0.3s ease-out;
+  }
   .range {
     appearance: none;
     webkit-appearance: none;
