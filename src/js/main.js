@@ -35,7 +35,7 @@ inputSearch.addEventListener("input", async (e) => {
         data.products.filter(product => !filteredProducts.includes(product))
       ).forEach(product => {
         const card = document.createElement("div");
-        card.innerHTML = `<a <a href="./product.html?id=${product.id}"> class="card bg-base-100 w-full shadow-sm group">
+        card.innerHTML = `<a href="./product.html?id=${product.id}"> 
                             <figure>
                               <img class="group-hover:scale-[1.2] transition duration-300" src="${product.thumbnail}" alt="${product.title}" />
                             </figure>
