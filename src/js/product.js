@@ -1,4 +1,6 @@
 import { fetchData } from "./fetchData.js";
+import { loder } from "./loader.js";
+
 import { showProduct } from "./updateUI.js";
 
 
@@ -37,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
       
     });
 });
+
+
 
 const html = document.documentElement;
 const modeToggler = document.getElementById("mode-toggler");
